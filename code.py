@@ -32,5 +32,5 @@ attendance_count = (
      #   | 'Format results' >> beam.Map(lambda employee_count: str(employee_count))
         | 'Write results' >> beam.io.WriteToText("gs://test-peak-responder-333513/temp")
 )
-#
+##
 p.run()
